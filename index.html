@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="start_messanger">Переведите слово</h1>
+      </div>
+      <div>
+        <h2 class="user_answer"></h2>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="answer_input"
+          class="input"
+          maxlength="50"
+          oninput="validateInput(this)"
+        />
+        <button id="answer_button" class="button" onclick="checkTranslation()">
+          Go
+        </button>
+      </div>
+
+      <div>
+        <h2 class="translation"></h2>
+      </div>
+
+      <div>
+        <p class="count_answers"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

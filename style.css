@@ -1,0 +1,94 @@
+/* 
+font-family: 'Laila', serif;
+font-family: 'Rye', serif;
+ */
+
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  color: #000000;
+  margin: 0; /* Убедитесь, что нет отступов по умолчанию */
+  overflow: hidden; /* Чтобы избежать прокрутки, если содержимое больше экрана */
+  font-family: "Laila", serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/english_fon.png);
+  background-size: cover;
+  z-index: -1; /* Поместите псевдоэлемент позади контента body */
+  opacity: 0.5; /* Прозрачность вашего overlay, можно настроить по вашему вкусу */
+}
+
+.container {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.start_messanger {
+  margin-bottom: 10px;
+  color: #00000061;
+  font-size: 18px;
+}
+
+.user_answer {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+input {
+  width: 200px;
+  height: 28px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.grean_input {
+  border-color: green;
+}
+
+.red_input {
+  border-color: red;
+}
+
+.button {
+  font-size: 23px;
+  border: 2px solid black;
+  transition: background-color 1s ease;
+}
+
+.green_button {
+  background-color: green;
+}
+
+.red_button {
+  background-color: red;
+}
+
+.green_text {
+  color: green;
+}
+
+.red_text {
+  color: red;
+}
+
+.translation {
+  font-size: 20px;
+}
+
+.count_answers {
+  font-size: 15px;
+  font-family: "Rye", serif;
+}
